@@ -1,0 +1,7 @@
+{
+  "name": "magpie-anthropic-uncloak-integration-fixture",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "private": true
+}

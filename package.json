@@ -1,0 +1,46 @@
+{
+  "name": "magpie-anthropic-uncloak",
+  "version": "0.1.0",
+  "description": "Independent Anthropic API provider for Magpie with CPA-style uncloak request handling.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "src/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:integration": "node scripts/integration.mjs",
+    "check": "node --check index.mjs && node --check src/uncloak.mjs && node --check src/models.mjs"
+  },
+  "engines": {
+    "node": ">=22",
+    "bun": ">=1.4.2"
+  },
+  "license": "MIT",
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "anthropic",
+    "uncloak"
+  ],
+  "magpie": {
+    "name": "Anthropic Uncloak",
+    "summary": {
+      "zh": "通过自己的 Anthropic API Key 使用 Claude，按 CPA uncloak 方式处理请求。",
+      "en": "Your own Anthropic API key with CPA-style uncloak handling."
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiancaizhi9098/magpie-anthropic-uncloak.git"
+  },
+  "homepage": "https://github.com/Tiancaizhi9098/magpie-anthropic-uncloak#readme",
+  "bugs": {
+    "url": "https://github.com/Tiancaizhi9098/magpie-anthropic-uncloak/issues"
+  }
+}
