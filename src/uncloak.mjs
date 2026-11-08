@@ -1,7 +1,7 @@
 // Independent implementation of the documented CPA uncloak behavior.
 // Source reference and attribution are recorded in README.md.
 export const BASE_URL = "https://api.anthropic.com/v1";
-export const USER_AGENT = "magpie-anthropic-uncloak/0.1.0";
+export const USER_AGENT = "magpie-anthropic-uncloak/0.1.1";
 export const API_VERSION = "2023-06-01";
 
 const identities = new Set([
